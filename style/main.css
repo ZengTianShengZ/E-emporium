@@ -1,0 +1,629 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*       全局设置       */
+.left_float{float:left;}
+.right_float{float:right;}
+.comWidth{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/*topBar*/
+.topBar{
+    height: 33px;
+    line-height: 33px;
+    background: #f7f7f7;
+}
+.collection{
+    background:url("../images/icon/collection.jpg") left center no-repeat;
+    padding-left: 19px;
+    font-weight: bolder;
+}
+.topBar a:hover{
+    color: red;
+}
+.logoBar{
+    height: 85px;
+    background: #1D7AD9;
+}
+/*logo*/
+.logo{
+/*根据规范，一个盒子如果没有上补白(padding-top)和上边框(border-top)，那么这个盒子的上边距会和其内部文档流中的第一个子元素的上边距重叠。*/
+
+    padding-left: 41px;
+    padding-top: 13px;
+}
+.search_box{
+    width: 430px;
+    padding-top: 23px;
+    padding-left: 158px;
+
+}
+.search_text{
+    width:340px;
+    height:35px;
+    padding-left: 10px;
+    line-height:35px\9;
+
+}
+.search_btn{
+    height:35px;
+    width:80px;
+    font-size:14px;
+    font-family:"Microsoft YaHei", "微软雅黑";
+    background-color:#FF8C00;
+    color:#FFF;
+
+}
+.shopCar{
+    width:145px;
+    height:35px;
+    background-color:#FF8C00;
+    margin-top:23px;
+    font:14px/35px "Microsoft YaHei", "微软雅黑";
+    color:#FFF;
+    margin-right:59px;
+
+}
+.shopText{
+    height:35px;
+    width:87px;
+    display: block;
+    border-right:#E27A00 solid 1px;
+    background:url(../images/icon/shaoIcon.jpg) 10px center no-repeat;
+    text-indent:40px;
+}
+.shopNum{
+    height:35px;
+    width:27px;
+    display: block;
+    background:url(../images/icon/sj.jpg) 33px center no-repeat;
+    text-align: right;
+    padding-right: 29px;
+}
+/*导航*/
+.navBox{
+    height: 35px;
+    background: #1369C0;
+    color:#FFF ;
+
+}
+.shopClass{
+    width:190px;
+    position: relative;
+}
+.shopClass h3{
+    text-align:center; line-height:35px;
+}
+.shopClass_icon {
+    width: 11px;
+    height: 7px;
+    background: url("../images/icon/down.jpg") no-repeat;
+    display: inline-block;
+    margin-left: 2px;
+
+}
+.nav,.shopClass h3{
+    font-family:"Microsoft YaHei", "微软雅黑";
+
+}
+.nav{line-height:35px;}
+.nav li{float:left;}
+.nav  a {
+    color:#FFF ;
+    line-height: 35px;
+    height:35px;
+    display:inline-block;
+    padding:0 35px;
+
+}
+.nav .active{background-color:#4593FD;}
+/*商品弹出列表*/
+.shopClass_show{
+    background-color:#4593FD;
+    position: absolute;
+    top:35px;
+    width: 100%;
+
+
+}
+.shopClass_item{
+    padding:10px 10px;
+    line-height:16px;
+
+}
+.shopClass_item dt{
+    height:30px;
+
+    background:url(../images/icon/shop_sj.jpg) right center no-repeat;
+}
+.shopClass_item a{
+    color:#FFF;
+}
+.shopClass_item  .b{
+    font:14px "Microsoft YaHei", "微软雅黑";
+}
+.shopClass_item .aLink{
+    width:48px;
+    height:20px;
+    background:url(../images/icon/aLink_bg.png) left center no-repeat;
+    display:inline-block;
+    text-align:center;
+    /*问题1 line-height 会影响同一行的所有元素？*/
+    line-height:20px;
+    text-decoration:underline;
+}
+/*shopClass_item active 状态*/
+.shopClass_active{
+    background-color: #FFF;
+    border-left:solid 1px #4593FD;
+
+}
+.shopClass_active dt{
+    background: none;
+}
+.shopClass_active a{
+    color:#000;
+}
+.shopClass_active .aLink{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*弹出的菜单*/
+.shopClass_list{
+    width:568px;
+    border:#CCC solid 1px;
+    position:absolute;
+    left: 190px;
+    top:35px;
+}
+.shopClass_cont{
+    padding:10px 20px;
+}
+.shopList_list_item{
+    padding:15px 0;
+    border-bottom:#CCC solid 1px;
+}
+.shopList_list_item dt{
+    color:#4593FD;
+    font-size: 14px;
+    font-weight: bolder;
+    height: 14px;
+    line-height: 25px;
+
+}
+.shopList_list_item dd{
+    color: rgba(80, 25, 9, 0.81);
+    padding-left:70px;
+    margin-top: -14px;
+
+}
+.shopList_list_item dd a{
+    padding-right: 12px;
+    line-height: 25px;
+}
+.shopList_links{
+    padding:15px 0;
+}
+
+.shopList_links a{
+    display: inline-block;
+    height: 30px;
+    background: #4593FD;
+    line-height: 30px;
+    color: #FFF;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 20px;
+
+}
+.shopList_links span{
+    width: 11px;
+    height: 7px;
+    background:url(../images/icon/shop_sj.jpg) left center no-repeat;
+    display: inline-block;
+    margin-left:7px;
+
+}
+/*banner部分*/
+.banner_big{
+    width: 810px;
+    height: 326px;
+}
+.banner_bi .imgBox{
+    width: 1620px;
+    height: 326px;
+}
+.banner_bi .imgBox img{
+    width: 810px;
+    height: 326px;
+}
+
+
+/*   banner_bar  的公共部分*/
+.banner_bar{
+    float:right;
+    position: relative;
+    overflow: hidden;
+}
+.imgBox{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.imgBox li{
+    float: left;
+}
+.imgBox img{
+    display: block;
+}
+.imgNum{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+
+}
+.imgNum a{
+    width:20px;
+    height:5px;
+    background-color:#FFF ;
+    display: inline-block;
+    margin: 0 3px;
+}
+.imgNum .active{
+    background-color:#FF7700;
+}
+/*商品标题*/
+.shopTit{
+    height:44px;
+    font-family:"Microsoft YaHei", "微软雅黑" ;
+    line-height: 44px;margin-bottom: 15px;
+    margin-top: 30px;
+
+}
+.shopTit h3{
+    font-size: 24px;
+    float: left;
+    font-weight: normal;
+    padding-left:15px;
+}
+.shopTit .icon{
+    width:44px;
+    height:44px;
+    background:url(../images/icon/shopIcon.jpg) left top no-repeat;
+    float: left;
+}
+.shopTit .more{
+    float:right;
+    font-family:"宋体";
+}
+.shopTit .more:hover{
+    text-decoration:underline;
+}
+/*商品列表*/
+
+.shopList .leftArea{
+    width:190px;
+    float: left;
+
+}
+.shopList .rightArea{
+    width: 808px;
+    height:396px;
+    border:#999 solid 1px;
+    float: left;
+}
+/*商品列表  左侧*/
+.banner_sm{
+    width:190px;
+    height: 326px;
+}
+.banner_sm .imgBox{
+    width: 380px;
+    height: 326px;
+}
+.banner_sm .imgBox img{
+    width:190px;
+    height: 326px;
+}
+
+
+/*商品列表  右侧*/
+
+.rightArea ul li{
+    float: left;
+    width: 201px;
+}
+
+.rightArea .shopList_top ul li {
+    text-align: center;
+    font-family:"Microsoft YaHei", "微软雅黑";
+    border-right:#999 solid 1px;
+    border-bottom:#999 solid 1px;
+
+}
+.rightArea .shopList_top ul li a{
+    height:218px;
+    width:100%;
+    display: block;
+}
+.rightArea .shopList_top ul li h3{
+   padding: 10px 0;
+
+}
+.rightArea .shopList_top ul li p{
+    font-size:14px;
+    color:#FF7300;
+     padding-bottom: 10px;
+}
+.shopItem_sm ul li {
+    height: 110px;
+
+}
+.shopItem_smImg a img{
+    width: 100px;
+    height: 109px;
+}
+.shopItem_text{
+    width: 100px;
+    padding-top: 30px;
+
+}
+.shopItem_text h3{
+    line-height:30px;
+}
+
+.footer{
+    text-align:center;
+    background-color:#D4D4D4;
+    line-height:24px;
+    padding:50px 0;
+
+}
+.footer i{font-style:normal; margin:0 5px; }
+.footer a{color:#000;}
+.footer a:hover{color:#F60;}
+.web{padding-top:30px;}
+.web img{margin:0 12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*       产品分类.html      */
+.products{
+    margin-top: 10px;
+}
+/*产品分类*/
+.products .leftArea{
+    width: 185px;
+
+    float: left;
+}
+.products .rightArea{
+    width: 810px;
+    float: left;
+}
+/*产品分类导航*/
+.leftNav{background-color:#F3F3F3; border:#D7D7D7 solid 1px;}
+.nav_title{
+    height:34px;
+    line-height:34px;
+    font-size:14px;
+    border-bottom:#D7D7D7 solid 1px;
+    text-align:center;
+}
+.nav_cont{
+    padding:0 18px 4px;/*上 左右 下*/
+    border-bottom:#D7D7D7 1px dotted;
+    margin-bottom:-1px;
+}
+.nav_cont h3{
+    font-size:12px;
+    height:30px;
+    line-height:30px;
+}
+.navCont_list{
+    line-height: 25px;
+}
+.navCont_list li{
+    float: left;
+    width: 50%;
+    height: 25px;
+    line-height: 25px;
+
+
+}
+
+/*筛选*/
+.screening_box{
+    padding-left: 10px;
+}
+.screening{
+    border-bottom: 1px solid darkolivegreen;
+    font-family:Verdana;
+}
+.screening dt{
+    float: left;
+    line-height:32px;
+    width:74px;
+    text-align:right;
+    margin-right:42px;
+
+}
+.limit{
+    width:55px;
+    float:left;
+    line-height:32px;
+}
+.screening_list{
+    float: right;
+}
+.screening .active{
+    background-color:#1D7AD9;
+    color:#FFF;
+}
+.screening a{padding:2px; }
+.screening_list{
+    float: left;
+    line-height:32px;
+    width:626px;
+
+}
+.screening_list li{
+    width:20%;
+    float:left;}
+
+.screen_more{
+    display: inline-block;
+    border: 1px solid royalblue;
+    line-height: 30px;
+    padding:0 10px;
+    margin: 5px 5px;
+}
+.screen_more a{
+    background:url(../images/icon/sj_grey.gif) right center no-repeat;
+    padding-right:14px;}
+
+
+/*page*/
+.page{
+    text-align: center;
+}
+.page a{
+
+    display: inline-block;
+    border: 1px solid royalblue;
+    padding: 6px 10px;
+    margin: 0 5px;
+}
+.page .h1{
+    display:inline-block;
+    padding:0 12px;
+    margin:0 2px;
+}
+.morePage{
+    padding-left:14px;
+    display:inline-block;
+    height:24px;
+    line-height:24px;
+}
+.pageNum{
+    width: 29px;
+    padding: 0 3px;
+    border: #ccc solid 1px;
+    height:24px ;
+    text-align: center;
+    line-height:24px\9;
+}
+.page_btn{
+    width:44px;
+    height:24px;
+    line-height:24px;
+    background-color:#E8E8E8;
+    border:#CCC solid 1px;
+
+}
+/*
+ 兼容 IE ，IE 有可能出现 <a 标签不对其的情况，那就需要设置下面样式
+.page a,
+.page span,
+.page input{
+    vertical-align: middle;
+    position: relative;
+}*/
+
+/*商品介绍*/
+.grey{background-color:#F0F0F0;}
+/*位置*/
+.userPosition{font-size:0; font-family:Verdana; margin-top:25px; margin-bottom:15px;}
+.userPosition em,
+.userPosition span,
+.userPosition strong,
+.userPosition a{font-size:12px;}
+.userPosition em{font-style:normal;}
+.userPosition a:hover{text-decoration:underline;}
+
+.description_info{
+    background-color: #FFF;
+}
+.description{
+    border:#CCC solid 1px;
+}
+.description .leftArea{
+    width: 309px;
+
+}
+.description .rightArea{
+    width: 688px;
+}
+.description  .leftArea .big{
+    height:340px;
+    text-align:center;
+
+}
+.des_smimg{
+    width: 265px;
+    margin: 0 auto;
+    padding-left:1px;
+
+}
+.des_smimg li{
+    float: left;
+    margin-left:-1px;
+}
+.des_smimg img{
+    border:#CCC solid 1px;
+}
+.des_smimg .active{
+    border-color:#317EE7;
+    position:relative;
+
+}
+
+
+
+
+
+
+/*         border: 1px solid red;            */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
