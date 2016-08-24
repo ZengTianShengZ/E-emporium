@@ -33,7 +33,7 @@
 }
 .logoBar{
     height: 85px;
-    background: #1D7AD9;
+    background: #C80027;
 }
 /***************************logo*************************************/
 .logo{
@@ -91,7 +91,7 @@
 /**************************导航*******************************************/
 .navBox{
     height: 35px;
-    background: #1369C0;
+    background: #B1191A;
     color:#FFF ;
 
 }
@@ -105,7 +105,7 @@
 .shopClass_icon {
     width: 11px;
     height: 7px;
-    background: url("../images/icon/down.jpg") no-repeat;
+
     display: inline-block;
     margin-left: 2px;
 
@@ -124,16 +124,18 @@
     padding:0 35px;
 
 }
-.nav .active{background-color:#4593FD;}
+.nav .active{
+    background-color:#FFF;
+    color: #C80027;
+}
 
 /***********************************商品弹出列表**********************************/
 
 .shopClass_show{
-    background-color:#4593FD;
+    background-color:#C80027;
     position: absolute;
     top:35px;
     width: 100%;
-
 
 }
 .shopClass_item{
@@ -144,7 +146,6 @@
 .shopClass_item dt{
     height:30px;
 
-    background:url(../images/icon/shop_sj.jpg) right center no-repeat;
 }
 .shopClass_item a{
     color:#FFF;
@@ -155,7 +156,8 @@
 .shopClass_item .aLink{
     width:48px;
     height:20px;
-    background:url(../images/icon/aLink_bg.png) left center no-repeat;
+    background:#FFF;
+    color:#C80027 ;
     display:inline-block;
     text-align:center;
     /*问题1 line-height 会影响同一行的所有元素？*/
@@ -395,9 +397,10 @@
 
 .footer{
     text-align:center;
-    background-color:#D4D4D4;
+    background-color:#F5F5F5;
     line-height:24px;
-    padding:50px 0;
+    padding:25px 0;
+    margin: 50px 0;
 
 }
 .footer i{font-style:normal; margin:0 5px; }
